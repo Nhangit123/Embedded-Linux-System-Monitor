@@ -1,0 +1,9 @@
+[Unit]
+Description=Embedded Linux System Monitor
+
+[Service]
+ExecStart=/usr/sbin/embedded-monitor -c /etc/embedded-monitor.conf
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
